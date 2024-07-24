@@ -4,12 +4,11 @@ import time
 
 import cv2
 import torch
+import streamlit as st
+from ultralytics import YOLO
 
 
 def inference():
-    from ultralytics import YOLO
-
-    import streamlit as st
     # Hide main menu style
     menu_style_cfg = """<style>MainMenu {visibility: hidden;}</style>"""
 
