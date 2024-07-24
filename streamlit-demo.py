@@ -1,7 +1,4 @@
-from ultralytics import solutions, YOLO
-from ultralytics.utils.downloads import GITHUB_ASSETS_STEMS
 
-import streamlit as st
 import io
 import time
 
@@ -10,6 +7,9 @@ import torch
 
 
 def inference():
+    from ultralytics import YOLO
+
+    import streamlit as st
     # Hide main menu style
     menu_style_cfg = """<style>MainMenu {visibility: hidden;}</style>"""
 
